@@ -8,7 +8,7 @@ namespace Task1
         public static void Main(string[] args)
         {
             Console.WriteLine("Практическая работа №7");
-            Console.WriteLine("1-30");
+            Console.WriteLine("Введите номер задания от 1 до 30:");
             int sm = Convert.ToInt32(Console.ReadLine());
 
             double a, b, c, ax, ay, bx, by, r, a1, b1, c1, r1, m, v, m1, v1, u, u1, mv, rv, ms, rs;
@@ -16,9 +16,9 @@ namespace Task1
             switch (sm)
             {
                 case 1:
-                    Console.WriteLine("Введите значение А");
+                    Console.WriteLine("Введите значение А:");
                     a = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите значение B");
+                    Console.WriteLine("Введите значение B:");
                     b = Convert.ToDouble(Console.ReadLine());
 
                     Calculator1 calculator1 = new Calculator1(a, b);
@@ -39,13 +39,13 @@ namespace Task1
                     break;
 
                 case 3:
-                    Console.WriteLine("Введите координату Ax");
+                    Console.WriteLine("Введите координату Ax:");
                     ax = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите координату Ay");
+                    Console.WriteLine("Введите координату Ay:");
                     ay = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите координату Bx");
+                    Console.WriteLine("Введите координату Bx:");
                     bx = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите координату By");
+                    Console.WriteLine("Введите координату By:");
                     by = Convert.ToDouble(Console.ReadLine());
 
 
@@ -81,9 +81,9 @@ namespace Task1
                     break;
 
                 case 6:
-                    Console.WriteLine("Введите координату Ax");
+                    Console.WriteLine("Введите координату Ax:");
                     ax = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите координату Ay");
+                    Console.WriteLine("Введите координату Ay:");
                     ay = Convert.ToDouble(Console.ReadLine());
 
                     Calculator6 calculator6 = new Calculator6(ax, ay);
@@ -91,11 +91,11 @@ namespace Task1
                     break;
 
                 case 7:
-                    Console.WriteLine("Введите координату Ax");
+                    Console.WriteLine("Введите координату Ax:");
                     ax = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите координату Ay");
+                    Console.WriteLine("Введите координату Ay:");
                     ay = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите радиус окружности");
+                    Console.WriteLine("Введите радиус окружности:");
                     r = Convert.ToDouble(Console.ReadLine());
 
                     Calculator7 calculator7 = new Calculator7(ax, ay, r);
@@ -104,17 +104,17 @@ namespace Task1
                     break;
 
                 case 8:
-                    Console.WriteLine("Введите сторону 1 треугольника A");
+                    Console.WriteLine("Введите сторону A первого треугольника:");
                     a = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите сторону 1 треугольника B");
+                    Console.WriteLine("Введите сторону B первого треугольника:");
                     b = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите сторону 1 треугольника C");
+                    Console.WriteLine("Введите сторону C первого треугольника:");
                     c = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите сторону 2 треугольника A");
+                    Console.WriteLine("Введите сторону A второго треугольника:");
                     a1 = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите сторону 2 треугольника B");
+                    Console.WriteLine("Введите сторону B второго треугольника:");
                     b1 = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите сторону 2 треугольника C");
+                    Console.WriteLine("Введите сторону C второго треугольника:");
                     c1 = Convert.ToDouble(Console.ReadLine());
 
 
@@ -124,7 +124,7 @@ namespace Task1
                     break;
 
                 case 9:
-                    Console.WriteLine("Введите сторону квадрата");
+                    Console.WriteLine("Введите сторону квадрата:");
                     a = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Введите радиус круга:");
                     r = Convert.ToDouble(Console.ReadLine());
@@ -158,14 +158,14 @@ namespace Task1
                     break;
 
                 case 12:
-                    Console.WriteLine("Введите координату Ax");
+                    Console.WriteLine("Введите координату Ax:");
                     ax = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите координату Ay");
+                    Console.WriteLine("Введите координату Ay:");
                     ay = Convert.ToDouble(Console.ReadLine());
 
                     Calculator12 calculator12 = new Calculator12(ax, ay);
                     if (calculator12.CalculateA()) Console.WriteLine("Данная точка лежит в первой четверти");
-                    else Console.WriteLine("Данная точка лежит в первой четверти");
+                    else Console.WriteLine("Данная точка не лежит в первой четверти");
                     break;
 
                 case 13:
@@ -179,9 +179,9 @@ namespace Task1
                     break;
 
                 case 14:
-                    Console.WriteLine("Введите значение А");
+                    Console.WriteLine("Введите значение А:");
                     a = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите значение B");
+                    Console.WriteLine("Введите значение B:");
                     b = Convert.ToDouble(Console.ReadLine());
 
                     Calculator14 calculator14 = new Calculator14(a, b);
@@ -191,13 +191,13 @@ namespace Task1
                     break;
 
                 case 15:
-                    Console.WriteLine("Введите координату Ax");
+                    Console.WriteLine("Введите координату Ax:");
                     ax = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите координату Ay");
+                    Console.WriteLine("Введите координату Ay:");
                     ay = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите координату Bx");
+                    Console.WriteLine("Введите координату Bx:");
                     bx = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите координату By");
+                    Console.WriteLine("Введите координату By:");
                     by = Convert.ToDouble(Console.ReadLine());
 
 
@@ -207,13 +207,13 @@ namespace Task1
                     break;
 
                 case 16:
-                    Console.WriteLine("Введите координату Ax");
+                    Console.WriteLine("Введите координату Ax:");
                     ax = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите координату Ay");
+                    Console.WriteLine("Введите координату Ay:");
                     ay = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите радиус окружности");
+                    Console.WriteLine("Введите радиус окружности:");
                     r = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите радиус окружности");
+                    Console.WriteLine("Введите радиус окружности:");
                     r1 = Convert.ToDouble(Console.ReadLine());
 
                     Calculator16 calculator16 = new Calculator16(ax, ay, r, r1);
@@ -222,14 +222,14 @@ namespace Task1
                     break;
 
                 case 17:
-                    Console.WriteLine("Введите координату Ax");
+                    Console.WriteLine("Введите координату Ax:");
                     ax = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите координату Ay");
+                    Console.WriteLine("Введите координату Ay:");
                     ay = Convert.ToDouble(Console.ReadLine());
 
                     Calculator17 calculator17 = new Calculator17(ax, ay);
                     if (calculator17.CalculateA()) Console.WriteLine("Данная точка лежит в 4 четверти");
-                    else Console.WriteLine("Данная точка лежит в 4 четверти");
+                    else Console.WriteLine("Данная точка не лежит в 4 четверти");
                     break;
 
                 case 18:
@@ -253,8 +253,8 @@ namespace Task1
                     Console.WriteLine("Введите третье число:");
                     int ci = Convert.ToInt32(Console.ReadLine());
                     Calculator19 calculator19 = new Calculator19(ai, bi, ci);
-                    if (calculator19.CalculateA()) Console.WriteLine("Числа являются тройкой пифагора");
-                    else Console.WriteLine("Числа не являются тройкой пифагора");
+                    if (calculator19.CalculateA()) Console.WriteLine("Данные числа являются тройкой пифагора");
+                    else Console.WriteLine("Данные числа не являются тройкой пифагора");
                     break;
 
                 case 20:
@@ -264,12 +264,12 @@ namespace Task1
                     Calculator20 calculator20 = new Calculator20(a, b);
                     Console.WriteLine($"Объёмная скорость 1: {a} л/с = {calculator20.LiterSpeed():F6} м³/с");
                     Console.WriteLine($"Объёмная скорость 2: {b} м³/мин = {calculator20.MeterSpeed():F6} м³/с");
-                    if (calculator20.CalculateA()) Console.WriteLine("1 объёмная скорость больше");
-                    else Console.WriteLine("2 объёмная скорость больше");
+                    if (calculator20.CalculateA()) Console.WriteLine("Первая объёмная скорость больше");
+                    else Console.WriteLine("Вторая объёмная скорость больше");
                     break;
 
                 case 21:
-                    Console.WriteLine("Введите сторону квадрата");
+                    Console.WriteLine("Введите сторону квадрата:");
                     a = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Введите радиус круга:");
                     r = Convert.ToDouble(Console.ReadLine());
@@ -280,33 +280,33 @@ namespace Task1
                     break;
 
                 case 22:
-                    Console.WriteLine("Введите массу первого объекта");
+                    Console.WriteLine("Введите массу первого объекта:");
                     m = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите объём первого объекта");
+                    Console.WriteLine("Введите объём первого объекта:");
                     v = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите массу второго объекта");
+                    Console.WriteLine("Введите массу второго объекта:");
                     m1 = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите объём второго объекта");
+                    Console.WriteLine("Введите объём второго объекта:");
                     v1 = Convert.ToDouble(Console.ReadLine());
 
                     Calculator22 calculator22 = new Calculator22(m, v, m1, v1);
-                    if (calculator22.CalculateA()) Console.WriteLine("Плотность 1 тела больше");
-                    else Console.WriteLine("Плотность 2 тела больше");
+                    if (calculator22.CalculateA()) Console.WriteLine("Плотность первого тела больше, чем плотность второго тела");
+                    else Console.WriteLine("Плотность второго тела больше, чем плотность первого");
                     break;
 
                 case 23:
-                    Console.WriteLine("Введите скорость в км/ч");
+                    Console.WriteLine("Введите скорость в км/ч:");
                     a = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите скорость в м/сек");
+                    Console.WriteLine("Введите скорость в м/сек:");
                     b = Convert.ToDouble(Console.ReadLine());
 
                     Calculator23 calculator23 = new Calculator23(a, b);
-                    if (calculator23.CalculateA()) Console.WriteLine("Скорость в км/ч больше");
-                    else Console.WriteLine("Скорость в м/сек больше");
+                    if (calculator23.CalculateA()) Console.WriteLine("Скорость в км/ч больше, чем скорость в м/сек");
+                    else Console.WriteLine("Скорость в м/сек больше, чем скорость в км/ч");
                     break;
 
                 case 24:
-                    Console.WriteLine("Введите сторону равностороннего треугольника");
+                    Console.WriteLine("Введите сторону равностороннего треугольника:");
                     a = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Введите радиус круга:");
                     r = Convert.ToDouble(Console.ReadLine());
@@ -317,18 +317,18 @@ namespace Task1
                     break;
 
                 case 25:
-                    Console.WriteLine("Введите сопротивление 1 участка");
+                    Console.WriteLine("Введите сопротивление 1 участка:");
                     r = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите напряжение 1 участка");
+                    Console.WriteLine("Введите напряжение 1 участка:");
                     u = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите сопротивление 2 участка");
+                    Console.WriteLine("Введите сопротивление 2 участка:");
                     r1 = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите напряжение 2 участка");
+                    Console.WriteLine("Введите напряжение 2 участка:");
                     u1 = Convert.ToDouble(Console.ReadLine());
 
                     Calculator25 calculator25 = new Calculator25(r, u, r1, u1);
-                    if (calculator25.CalculateA()) Console.WriteLine("Меньший ток течёт по 1 участку");
-                    else Console.WriteLine("Меньший ток течёт по 2 участку");
+                    if (calculator25.CalculateA()) Console.WriteLine("Меньший ток течёт по первому участку");
+                    else Console.WriteLine("Меньший ток течёт по второму участку");
                     break;
 
                 case 26:
@@ -342,24 +342,24 @@ namespace Task1
                     break;
 
                 case 27:
-                    Console.WriteLine("Введите текущий час");
+                    Console.WriteLine("Введите текущий час в двадцатичетрехчасовом формате");
                     a = Convert.ToDouble(Console.ReadLine());
 
                     Calculator27 calculator27 = new Calculator27(a);
                     if (calculator27.CalculateA() == 0) Console.WriteLine("Время не может быть больше 24 или меньше 0");
-                    else if (calculator27.CalculateA() == 1) Console.WriteLine("Сейчас время от полуночи до полудня");
-                    else Console.WriteLine("Сейчас время от полудня до полуночи");
+                    else if (calculator27.CalculateA() == 1) Console.WriteLine("Сейчас время от полуночи до полудня(PM)");
+                    else Console.WriteLine("Сейчас время от полудня до полуночи(AM)");
                     break;
 
                 case 28:
-                    Console.WriteLine("Введите долготу");
+                    Console.WriteLine("Введите долготу:");
                     a = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Введите широту");
+                    Console.WriteLine("Введите широту:");
                     b = Convert.ToDouble(Console.ReadLine());
 
                     Calculator28 calculator28 = new Calculator28(a);
-                    if (calculator28.CalculateA()) Console.WriteLine("Восточное полушарие");
-                    else Console.WriteLine("Западное полушарие");
+                    if (calculator28.CalculateA()) Console.WriteLine("Данная координата находится в восточном полушарии");
+                    else Console.WriteLine("Данная координата находится в западном полушарии");
                     break;
 
                 case 29:
@@ -372,7 +372,7 @@ namespace Task1
                     break;
 
                 case 30:
-                    Console.WriteLine("Введите натуральное число");
+                    Console.WriteLine("Введите натуральное число:");
                     ai = Convert.ToInt32(Console.ReadLine());
 
                     Calculator30 calculator30 = new Calculator30(ai);
