@@ -2,24 +2,22 @@
 {
     public class Calculator22
     {
-        public double A {  get; set; }
-        public double B { get; set; }
-        public double C { get; set; }
+        public double M {  get; set; }
+        public double V { get; set; }
+        public double M1 { get; set; }
+        public double V1 { get; set; }
 
 
-        public Calculator22(double a, double b, double c) 
+        public Calculator22(double m, double v, double m1, double v1) 
         {
-            A = a;
-            B = b;
-            C = c;
+            M = m;
+            V = v;
+            M1 = m1;
+            V1 = v1;
         }
         public bool CalculateA()
         { 
-            return (A % 2 == 0 && B % 2 != 0) || (A % 2 != 0 && B % 2 == 0);
-        }
-        public bool CalculateB() 
-        {
-            return A % 3 == 0 && B % 3 == 0 && C % 3 == 0;
+            return M/V > M1/V1;
         }
     }
 }

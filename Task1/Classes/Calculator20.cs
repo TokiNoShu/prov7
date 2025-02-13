@@ -8,48 +8,24 @@ namespace Classes
 {
     public class Calculator20
     {
-        public bool X { get; set; }
-        public bool Y { get; set; }
-        public bool Z { get; set; }
-
-        public bool CalculateA(int x, int y, int z)
+        public double A { get; set; }
+        public double B { get; set; }
+        public Calculator20(double a, double b)
         {
-            {
-                if (x == 1)
-                    X = true;
-                else X = false;
-                if (y == 1)
-                    Y = true;
-                else Y = false;
-                if (z == 1)
-                    Z = true;
-                else Z = false;
-                return X && !(!Y || Z) || Y;
-            }
+            A = a;
+            B = Math.Pow(b, -3);
         }
-        public void CalculateB()
+        public double LiterSpeed()
         {
-            for (int x = 0; x <= 1; x++)
-            {
-                for (int y = 0; y <= 1; y++)
-                {
-                    for (int z = 0; z <= 1; z++)
-                    {
-                        bool result = CalculateA(x, y, z);
-                        Console.WriteLine("  -----------------------------");
-                        if (result)
-                        {
-                            Console.WriteLine($"  |  {x}  |  {y}  |  {z}  |  {result}   |");
-                        }
-                        else
-                        {
-                            Console.WriteLine($"  |  {x}  |  {y}  |  {z}  |  {result}  |");
-                        }
-
-                    }
-                }
-            }
-            Console.WriteLine("  -----------------------------");
+            return A * 0.001;
+        }
+        public double MeterSpeed()
+        {
+            return B / 60;
+        }
+        public bool CalculateA()
+        {
+            return LiterSpeed() > MeterSpeed();
         }
     }
 }

@@ -4,20 +4,17 @@ namespace Classes
 {
     public class Calculator23
     {
-        public int N { get; set; }
+        public double A { get; set; }
+        public double B { get; set; }
 
-
-        public Calculator23(double n)
+        public Calculator23(double a, double b)
         {
-            N = Convert.ToInt32(n);
+            A = a;
+            B = b;
         }
         public bool CalculateA()
         {
-            return N % 4 == 0 || N % 7 == 0;
-        }
-        public bool CalculateB()
-        {
-            return N % 5 == 0 || N % 10 != 0;
+            return A > B * 3.6;
         }
     }
 }

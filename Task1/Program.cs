@@ -7,11 +7,11 @@ namespace Task1
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Практическая работа №5");
-            Console.WriteLine("1-21");
+            Console.WriteLine("Практическая работа №7");
+            Console.WriteLine("1-30");
             int sm = Convert.ToInt32(Console.ReadLine());
 
-            double a, b, c, ax, ay, bx, by, r, a1, b1, c1, r1;
+            double a, b, c, ax, ay, bx, by, r, a1, b1, c1, r1, m, v, m1, v1;
 
             switch (sm)
             {
@@ -148,7 +148,7 @@ namespace Task1
                     break;
 
                 case 11:
-                    Console.WriteLine("Введите наторальное число");
+                    Console.WriteLine("Введите натуральное число");
                     int ai = Convert.ToInt32(Console.ReadLine());
 
                     Calculator11 calculator11 = new Calculator11(ai);
@@ -222,8 +222,6 @@ namespace Task1
                     break;
 
                 case 17:
-
-
                     Console.WriteLine("Введите координату Ax");
                     ax = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Введите координату Ay");
@@ -260,18 +258,73 @@ namespace Task1
                     break;
 
                 case 20:
-                    БАБАБУНДА;
-                    Calculator20 calculator20 = new Calculator20();
-                    calculator20.CalculateB();
+                    a = 1;
+                    b = 10;
+
+                    Calculator20 calculator20 = new Calculator20(a, b);
+                    Console.WriteLine($"Объёмная скорость 1: {a} л/с = {calculator20.LiterSpeed():F6} м³/с");
+                    Console.WriteLine($"Объёмная скорость 2: {b} м³/мин = {calculator20.MeterSpeed():F6} м³/с");
+                    if (calculator20.CalculateA()) Console.WriteLine("1 объёмная скорость больше");
+                    else (Console.WriteLine("2 объёмная скорость больше");
                     break;
 
                 case 21:
-                    БАБАБУНДА;
-                    Console.WriteLine("Введите ваш стаж от 0 до 10 лет:");
+                    Console.WriteLine("Введите сторону квадрата");
                     a = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Введите радиус круга:");
+                    r = Convert.ToDouble(Console.ReadLine());
 
-                    Calculator21 calculator21 = new Calculator21(a);
-                    Console.WriteLine($"Ваш коэффициент составляет: {calculator21.CalculateA()}");
+                    Calculator21 calculator21 = new Calculator21(a, r);
+                    if (calculator21.CalculateA()) Console.WriteLine("Круг уместится в квадрате");
+                    else Console.WriteLine("Квадрат уместится в круге");
+                    break;
+
+                case 22:
+                    Console.WriteLine("Введите массу первого объекта");
+                    m = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Введите объём первого объекта");
+                    v = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Введите массу второго объекта");
+                    m1 = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Введите объём второго объекта");
+                    v1 = Convert.ToDouble(Console.ReadLine());
+
+                    Calculator22 calculator22 = new Calculator22(m, v, m1, v1);
+                    if (calculator22.CalculateA()) Console.WriteLine("Плотность 1 тела больше");
+                    else Console.WriteLine("Плотность 2 тела больше");
+                    break;
+
+                case 23:
+                    Console.WriteLine("Введите скорость в км/ч");
+                    a = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Введите скорость в м/сек");
+                    b = Convert.ToDouble(Console.ReadLine());
+
+                    Calculator23 calculator23 = new Calculator23(a, b);
+                    if (calculator23.CalculateA()) Console.WriteLine("Скорость в км/ч больше");
+                    else Console.WriteLine("Скорость в м/сек больше");
+                    break;
+
+                case 24:
+
+                    break;
+
+                case 25:
+                    break;
+
+                case 26:
+                    break;
+
+                case 27:
+                    break;
+
+                case 28:
+                    break;
+
+                case 29:
+                    break;
+
+                case 30:
                     break;
             }
         }

@@ -9,28 +9,19 @@ namespace Classes
     public class Calculator21
     {
         public double A { get; set; }
-        public double B { get; set; }
-
-
-        public Calculator21(double a)
+        public double R { get; set; }
+        public double sSq;
+        public double sCir;
+        public Calculator21(double a, double r)
         {
             A = a;
-            if (A > 2 && A <= 5)
-            {
-                B = 12;
-            }
-            if (A > 5)
-            {
-                B = 13;
-            }
-            if (A < 2)
-            {
-                B = 11;
-            }
+            R = r;
+            sSq = Math.Pow(A, 2) * Math.Sqrt(3 / 4);
+            sCir = Math.PI * Math.Pow(R, 2);
         }
-        public double CalculateA()
+        public bool CalculateA()
         {
-            return B;
+            return sSq > sCir;
         }
     }
 }
