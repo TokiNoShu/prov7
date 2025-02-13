@@ -2,16 +2,22 @@
 {
     public class Calculator25
     {
-        public double N { get; set; }
+        public double R { get; set; }
+        public double U { get; set; }
+        public double R1 { get; set; }
+        public double U1 { get; set; }
 
 
-        public Calculator25(double n)
+        public Calculator25(double r, double u, double r1, double u1)
         {
-            N = n;
+            R = r;
+            U = u;
+            R1 = r1;
+            U1 = u1;
         }
         public bool CalculateA()
         {
-            return N % 3 == 0 && N % 9 != 0 && (N % 4 == 0 == (N % 5 == 0 && N % 3 == 0));
+            return U / R > U1 / R1;
         }
     }
 }

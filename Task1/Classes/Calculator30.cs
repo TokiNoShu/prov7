@@ -2,23 +2,27 @@
 {
     public class Calculator30
     {
-        public double K { get; set; }
-        public double L { get; set; }
-        public double M { get; set; }
-        public double N { get; set; }
+        public int AI { get; set; }
 
-
-
-        public Calculator30(double k, double l, double m, double n)
+        public Calculator30(int ai)
         {
-            K = k;
-            L = l;
-            M = m;
-            N = n;
+            AI = ai;
         }
-        public bool CalculateA()
+        public double CalculateA()
         {
-            return K == 0 == L > M && (K < 0 == 2 * L - 3 * N < M);
+            if (AI > 0)
+            {
+                if (AI % 2 == 0)
+                {
+                    return 1;
+                }
+                else if (AI % 10 == 7)
+                {
+                    return 2;
+                }
+                else return 0;
+            }
+            else return 0;
         }
     }
 }

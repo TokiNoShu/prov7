@@ -4,16 +4,20 @@ namespace Classes
 {
     public class Calculator28
     {
-        public int N { get; set; }
+        public double A { get; set; }
 
 
-        public Calculator28(double n)
+        public Calculator28(double a)
         {
-            N = Convert.ToInt32(n);
+            A = a;
         }
         public bool CalculateA()
         {
-            return N % 2 == 0 && N % 7 == 0 && N % 11 != 0 && N % 13 != 0;
+            while (A > 360)
+            {
+                A -= 360;
+            }
+            return A > 0 && A < 180;
         }
     }
 }

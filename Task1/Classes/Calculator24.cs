@@ -1,30 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Classes
 {
     public class Calculator24
     {
-        public double K { get; set; }
-        public double L { get; set; }
-        public double M { get; set; }
-        public double N { get; set; }
-
-
-
-        public Calculator24(double k, double l, double m, double n)
+        public double A { get; set; }
+        public double R { get; set; }
+        public double sSq;
+        public double sCir;
+        public Calculator24(double a, double r)
         {
-            K = k;
-            L = l;
-            M = m;
-            N = n;
+            A = a;
+            R = r;
+            sSq = Math.Pow(A, 2) * Math.Sqrt(3 / 4);
+            sCir = Math.PI * Math.Pow(R, 2);
         }
         public bool CalculateA()
         {
-            return (N + M) > K && N > K == M < L;
+            return sSq > sCir;
         }
     }
 }

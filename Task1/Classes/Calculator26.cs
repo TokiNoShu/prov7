@@ -4,23 +4,23 @@ namespace Classes
 {
     public class Calculator26
     {
-        public double K { get; set; }
-        public double L { get; set; }
-        public double M { get; set; }
-        public double N { get; set; }
+        public double MV { get; set; }
+        public double RV { get; set; }
+        public double MS { get; set; }
+        public double RS { get; set; }
+        public double G;
 
-
-
-        public Calculator26(double k, double l, double m, double n)
+        public Calculator26(double mv, double rv, double ms, double rs)
         {
-            K = k;
-            L = l;
-            M = m;
-            N = n;
+            MV = mv;
+            RV = rv;
+            MS = ms;
+            RS = rs;
+            G = 6.7 * Math.Pow(10, -8);
         }
         public bool CalculateA()
         {
-            return N > 1 || (M <= L + K && L + K == 0) && (N > 2 == (Math.Pow(M, 2) > Math.Pow(L, 2)));
+            return G * MV / Math.Pow(RV, 2) > G * MS / Math.Pow(RS, 2);
         }
     }
 }

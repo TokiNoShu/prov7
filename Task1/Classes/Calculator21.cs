@@ -16,7 +16,7 @@ namespace Classes
         {
             A = a;
             R = r;
-            sSq = Math.Pow(A, 2) * Math.Sqrt(3 / 4);
+            sSq = Math.Pow(A, 2);
             sCir = Math.PI * Math.Pow(R, 2);
         }
         public bool CalculateA()

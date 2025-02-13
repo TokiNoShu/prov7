@@ -3,21 +3,17 @@
     public class Calculator27
     {
         public double A { get; set; }
-        public double B { get; set; }
 
 
         public Calculator27(double a)
         {
             A = a;
-            if (A < 50000 && A >= 0)
-                B = 1.16;
-            else if (A >= 50000 && A <= 100000)
-                B = 1.18;
-            else B = 0;
         }
         public double CalculateA()
         {
-            return A * B;
+            if (A >= 0 && A < 12) return 1;
+            else if (A >=12 && A < 24) return 2;
+            else return 0;
         }
     }
 }

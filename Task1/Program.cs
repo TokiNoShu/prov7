@@ -11,7 +11,7 @@ namespace Task1
             Console.WriteLine("1-30");
             int sm = Convert.ToInt32(Console.ReadLine());
 
-            double a, b, c, ax, ay, bx, by, r, a1, b1, c1, r1, m, v, m1, v1;
+            double a, b, c, ax, ay, bx, by, r, a1, b1, c1, r1, m, v, m1, v1, u, u1, mv, rv, ms, rs;
 
             switch (sm)
             {
@@ -24,7 +24,7 @@ namespace Task1
                     Calculator1 calculator1 = new Calculator1(a, b);
                     if (calculator1.CalculateA())
                         Console.WriteLine("Сумма квадратов больше, чем квадрат суммы");
-                    else Console.WriteLine("Квадрат суммы больше, сумма квадратов");
+                    else Console.WriteLine("Квадрат суммы больше, чем сумма квадратов");
                     break;
 
                 case 2:
@@ -265,7 +265,7 @@ namespace Task1
                     Console.WriteLine($"Объёмная скорость 1: {a} л/с = {calculator20.LiterSpeed():F6} м³/с");
                     Console.WriteLine($"Объёмная скорость 2: {b} м³/мин = {calculator20.MeterSpeed():F6} м³/с");
                     if (calculator20.CalculateA()) Console.WriteLine("1 объёмная скорость больше");
-                    else (Console.WriteLine("2 объёмная скорость больше");
+                    else Console.WriteLine("2 объёмная скорость больше");
                     break;
 
                 case 21:
@@ -306,25 +306,79 @@ namespace Task1
                     break;
 
                 case 24:
+                    Console.WriteLine("Введите сторону равностороннего треугольника");
+                    a = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Введите радиус круга:");
+                    r = Convert.ToDouble(Console.ReadLine());
 
+                    Calculator24 calculator24 = new Calculator24(a, r);
+                    if (calculator24.CalculateA()) Console.WriteLine("Круг уместится в треугольнике");
+                    else Console.WriteLine("Треугольник уместится в круге");
                     break;
 
                 case 25:
+                    Console.WriteLine("Введите сопротивление 1 участка");
+                    r = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Введите напряжение 1 участка");
+                    u = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Введите сопротивление 2 участка");
+                    r1 = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Введите напряжение 2 участка");
+                    u1 = Convert.ToDouble(Console.ReadLine());
+
+                    Calculator25 calculator25 = new Calculator25(r, u, r1, u1);
+                    if (calculator25.CalculateA()) Console.WriteLine("Меньший ток течёт по 1 участку");
+                    else Console.WriteLine("Меньший ток течёт по 2 участку");
                     break;
 
                 case 26:
+                    mv = 4.86 * Math.Pow(10, 27);
+                    rv = 6175;
+                    ms = 5.68 * Math.Pow(10, 29);
+                    rs = 57750;
+                    Calculator26 calculator26 = new Calculator26(mv, rv, ms, rs);
+                    if (calculator26.CalculateA()) Console.WriteLine("у Венеры наибольшее ускорение силы тяжести");
+                    else Console.WriteLine("у Сатурн наибольшее ускорение силы тяжести");
                     break;
 
                 case 27:
+                    Console.WriteLine("Введите текущий час");
+                    a = Convert.ToDouble(Console.ReadLine());
+
+                    Calculator27 calculator27 = new Calculator27(a);
+                    if (calculator27.CalculateA() == 0) Console.WriteLine("Время не может быть больше 24 или меньше 0");
+                    else if (calculator27.CalculateA() == 1) Console.WriteLine("Сейчас время от полуночи до полудня");
+                    else Console.WriteLine("Сейчас время от полудня до полуночи");
                     break;
 
                 case 28:
+                    Console.WriteLine("Введите долготу");
+                    a = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Введите широту");
+                    b = Convert.ToDouble(Console.ReadLine());
+
+                    Calculator28 calculator28 = new Calculator28(a);
+                    if (calculator28.CalculateA()) Console.WriteLine("Восточное полушарие");
+                    else Console.WriteLine("Западное полушарие");
                     break;
 
                 case 29:
+                    a = 8.14 * Math.Pow(10, 12);
+                    b = 103;
+
+                    Calculator29 calculator29 = new Calculator29(a, b);
+                    if (calculator29.CalculateA()) Console.WriteLine("Сириус ближе чем Арктур");
+                    else Console.WriteLine("Арктур ближе чем Сириус");
                     break;
 
                 case 30:
+                    Console.WriteLine("Введите натуральное число");
+                    ai = Convert.ToInt32(Console.ReadLine());
+
+                    Calculator30 calculator30 = new Calculator30(ai);
+                    if (calculator30.CalculateA() == 1) Console.WriteLine("Число является четным");
+                    else if (calculator30.CalculateA() == 2) Console.WriteLine("Число оканчивается на 7");
+                    else Console.WriteLine("Число не является натуральным или не является четным, или не оканчивается на 7");
                     break;
             }
         }
