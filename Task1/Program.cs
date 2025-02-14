@@ -217,8 +217,8 @@ namespace Task1
                     r1 = Convert.ToDouble(Console.ReadLine());
 
                     Calculator16 calculator16 = new Calculator16(ax, ay, r, r1);
-                    if (calculator16.CalculateA()) Console.WriteLine("Два числа из четырёх - чётные");
-                    else Console.WriteLine("Либо меньше двух чисел четные, либо больше");
+                    if (calculator16.CalculateA()) Console.WriteLine("Данная точка лежит в окружности тора");
+                    else Console.WriteLine("Данная точка не лежит в окружности тора");
                     break;
 
                 case 17:
@@ -338,7 +338,7 @@ namespace Task1
                     rs = 57750;
                     Calculator26 calculator26 = new Calculator26(mv, rv, ms, rs);
                     if (calculator26.CalculateA()) Console.WriteLine("у Венеры наибольшее ускорение силы тяжести");
-                    else Console.WriteLine("у Сатурн наибольшее ускорение силы тяжести");
+                    else Console.WriteLine("у Сатурна наибольшее ускорение силы тяжести");
                     break;
 
                 case 27:
